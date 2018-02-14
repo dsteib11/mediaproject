@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+header {
+  background: #a44543;
+  padding: 15px;
+}
+
+/* GLOBAL */
+
+.logo, li, a, .privacy {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* I know I'm repeating myself... It's for practice */
+header .logo {
+  display: inline-block;
+  width: 20%;
+}
+
+header .menu {
+  display: inline-block;
+  width: 40%; 
+}
+
+header .menu ul li {
+  display: inline-block; 
+}
+
+header .icon-links {
+  display: inline-block; 
+}
+
+header .icon-links ul li {
+  display: inline-block; 
+}
+
+header .privacy, .quick-links {
+  display: inline-block;
+}
+
+header .search-area {
+  display: inline-block;
+}
+
+header .search-area ul li {
+  display: inline-block;
+}
+
+
+
+
