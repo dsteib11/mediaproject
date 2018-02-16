@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
   box-sizing: border-box;
 }
@@ -7,25 +9,37 @@ html {
   font-size: 1.3rem;
 }
 
-header {
-  background: #a44543;
-  padding: 15px;
+a, header li, .privacy {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
 }
 
-/* GLOBAL */
+a:hover {
+  color: #818181;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
 
-header li,a, 
+
+/* header li,a, 
 .privacy {
-  color: white;
+   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
-}
+}  */
 
 
 /* I know I'm repeating myself... It's for practice */
 
 /* HEADER BEGINS */
+
+header {
+  background: #a44543;
+  padding: 15px;
+}
+
 header .logo {
   display: inline-block;
   width: 20%;
@@ -203,14 +217,10 @@ padding: 50px 0;
 
 #content-area .widget-box 
 .head 
-.widget-icon-container {
-  display: inline-block;
-}
-
-#content-area .widget-box 
-.head 
 .widget-icon {
   background:rgb(190, 190, 192);
+  text-align: center;
+
   height: 40px;
   width: 40px;
   color: #fff;
@@ -235,8 +245,28 @@ padding: 50px 0;
 }
 
 #content-area .widget-box 
+.head 
+.widget-icon-container {
+  display: inline-block;
+}
+
+
+#content-area .widget-box 
+.head  {
+  display: inline-block;
+  padding: 0 0 5px 5px;
+}
+
+#content-area .widget-box 
 .body {
   padding: 20px 0;
+}
+
+#content-area .widget-box 
+.body a {
+  color: #A44543;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 
@@ -291,4 +321,49 @@ padding: 50px 0;
   font-weight: 600;
   text-transform: uppercase;
 }
+
+
+/* POST AREA BEGINS HERE */
+
+#content-area .main-area .widget-box.post {
+  overflow: auto;
+}
+#content-area .main-area .widget-box.post .head .user-img {
+  display: inline-block;
+  background: url("http://leo-technologies.com/images/community-photo-03.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+}
+
+#content-area .main-area .widget-box.post .head .post-info {
+  display: inline-block;
+  float: right;
+}
+
+#content-area .main-area .widget-box.post .head .post-info a {
+  color: #A44543;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+
+#content-area .main-area .widget-box.post .head .user-info {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+
+#content-area .main-area .widget-box.post .head .post-info .post-date {
+  display: block;
+  font-size: 14px;
+  color: #818181;
+
+}
+
 
