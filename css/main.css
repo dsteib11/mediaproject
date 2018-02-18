@@ -346,6 +346,13 @@ padding: 50px 0;
   float: right;
 }
 
+#content-area .main-area .widget-box.post .head .post-info::after {
+  content: " ";
+  clear: both;
+  display: table;
+
+}
+
 #content-area .main-area .widget-box.post .head .post-info a {
   color: #A44543;
   transition: all .4s ease-in-out;
