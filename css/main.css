@@ -22,13 +22,6 @@ a:hover {
 }
 
 
-/* header li,a, 
-.privacy {
-   color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 300;
-}  */
 
 
 /* I know I'm repeating myself... It's for practice */
@@ -255,6 +248,7 @@ padding: 50px 0;
 .head  {
   display: inline-block;
   padding: 0 0 5px 5px;
+  width: 100%;
 }
 
 #content-area .widget-box 
@@ -328,30 +322,43 @@ padding: 50px 0;
 #content-area .main-area .widget-box.post {
   overflow: auto;
 }
+
 #content-area .main-area .widget-box.post .head .user-img {
   display: inline-block;
+  float: left;
   background: url("http://leo-technologies.com/images/community-photo-03.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   margin: 0 15px 0 0;
 }
 
-#content-area .main-area .widget-box.post .head .post-info {
-  display: inline-block;
-  float: right;
-}
-
-#content-area .main-area .widget-box.post .head .post-info::after {
+#content-area .main-area .widget-box.post .head::after{
   content: " ";
   clear: both;
   display: table;
-
 }
+
+#content-area .main-area .widget-box.post .head .post-info {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+#content-area .main-area .widget-box.post .head .post-info .post-date {
+  display: block;
+  float: left;
+  width: 80%;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
 
 #content-area .main-area .widget-box.post .head .post-info a {
   color: #A44543;
@@ -359,18 +366,18 @@ padding: 50px 0;
   cursor: pointer;
 }
 
-
-#content-area .main-area .widget-box.post .head .user-info {
-  display: block;
-  font-size: 18px;
-  margin: 10px 0 10px 0;
+#content-area .main-area .widget-box.post .head .post-info a:hover {
+  color: rgb(150, 140, 140);
+  transition: all .4s ease-in-out;
+  cursor: pointer;
 }
 
-#content-area .main-area .widget-box.post .head .post-info .post-date {
-  display: block;
-  font-size: 14px;
-  color: #818181;
 
+/* POST IMAGE BEGINS HERE */
+
+#content-area .main-area .widget-box.post .body .post-img img{
+  width: 100%;
 }
+
 
 
