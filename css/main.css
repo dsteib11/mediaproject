@@ -323,6 +323,12 @@ padding: 50px 0;
   overflow: auto;
 }
 
+#content-area .main-area .widget-box.post .head .user-img-container img {
+  width: 8%;
+  display: inline-block;
+  overflow: auto;
+}
+
 #content-area .main-area .widget-box.post .head .user-img {
   display: inline-block;
   float: left;
@@ -345,8 +351,7 @@ padding: 50px 0;
 
 #content-area .main-area .widget-box.post .head .post-info {
   display: inline-block;
-  float: left;
-  width: 80%;
+  width: 90%;
   padding: 5px 0;
   font-size: 18px;
 }
@@ -373,11 +378,109 @@ padding: 50px 0;
 }
 
 
+
+
 /* POST IMAGE BEGINS HERE */
 
-#content-area .main-area .widget-box.post .body .post-img img{
+#content-area .main-area .widget-box.post .body .post-img img {
   width: 100%;
 }
+
+
+#content-area .main-area .widget-box.post .body .post-comments {
+  margin: 25px 0
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-img {
+  width: 8%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments::after{
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+#content-area .main-area .widget-box.post .body .post-comments .user-img img {
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 20px 15px 0 0;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-comments {
+  background: #dbd9d9;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-comments {
+  display: inline-block;
+  width: 90%;
+  font-size: 16px;
+  margin: 14px 5px;
+}
+
+
+#content-area .main-area .widget-box.post .body .post-comments .user-comments .user-info {
+  margin: 0 5px;
+  padding: 10px 0;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-comments .user-info p {
+  margin: 10px 0;
+}
+
+
+
+
+
+/* CHANGES TO FORMS BEGIN  */
+/* 
+#content-area .main-area .widget-box.post .body .post-form input .icons {
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 20px 15px 0 0;
+} */
+
+#content-area .main-area .widget-box.post .body .post-form .user-img {
+  width: 8%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+
+#content-area .main-area .widget-box.post .body .post-form::after{
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+#content-area .main-area .widget-box.post .body .post-form .user-img img {
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 20px 15px 0 0;
+}
+
+#content-area .main-area .widget-box.post .body .post-form .form-info {
+  display: inline-block;
+  width: 90%;
+  font-size: 16px;
+  margin: 30px 5px;
+}
+
+
+
+
+
 
 
 
